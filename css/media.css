@@ -1,0 +1,191 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* -- Media Brand -- */
+    .brand {
+        font-size: 16px !important;
+        width: 95%;
+        right: 11px;
+        top: 5px;
+        border-left: none }
+
+    /* -- Media Name sourh -- */
+    .name-sourh {
+        width: 100%;
+        font-size: 15px !important;
+        font-weight: normal;
+        margin-top: 1em }
+
+    .name-sourh > div { padding: 0 1.9em }
+    .name-sourh div:first-child,
+    .name-sourh div:last-child { font-size: 12px }
+
+    /* -- Media Menu -- */
+    .menu {
+        width: 95%;
+        height: 100% }
+
+    /* -- Media sourh -- */
+    .sourh { margin-top: 5em }
+    .sourh .speech-container { width: 85% }
+    .sourh .speech-container h3 { font-size: 28px; margin-bottom: 20px }
+    .sourh .speech-container .p-aya { font-size: 20px }
+    .sourh .speech-container .end-sourh { font-size: 22px; margin-left: 10px }
+
+    /* Media DropDown */
+    .dropdown,
+    .dropdown .const .readers {
+        width: 130px;
+        height: auto;
+        right: 60px;
+        padding: 10px;
+        font-size: 12px }
+
+    .dropdown { top: 35px }
+    .dropdown .tafsier i { left: 12% }
+    .dropdown .tafsier .tfs { font-size: 16px }
+    /* The End "Khatma" */
+    .p-end { padding: 0 15px; font-size: 18px }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* -- Media Brand -- */
+    .brand {
+        font-size: 18px !important;
+        width: 25%;
+        right: 10px;
+        border-left: none }
+
+    /* -- Media Name sourh -- */
+    .name-sourh {
+        width: 95%;
+        font-size: 18px !important;
+        font-weight: normal;
+        margin-top: 1em;
+        margin-right: 1em;
+        text-align: center }
+
+    .name-sourh > div { padding: 0 4.4em }
+    .name-sourh div:first-child,
+    .name-sourh div:last-child { font-size: 14px }
+
+    /* -- Media Menu -- */
+    .menu {
+        width: 70%;
+        height: 100% }
+
+    /* -- Media sourh -- */
+    .sourh { margin-top: 5em }
+    .sourh .speech-container { width: 85% }
+    .sourh .speech-container h3 { font-size: 30px; margin-bottom: 25px}
+    .sourh .speech-container .p-aya { font-size: 23px }
+    .sourh .speech-container .end-sourh { font-size: 25px; margin-left: 15px;}
+
+    /* Media DropDown */
+    .dropdown,
+    .dropdown .const .readers {
+        width: 140px;
+        height: auto;
+        right: 70px;
+        padding: 12px;
+        font-size: 13px }
+    
+    .dropdown { top: 40px } 
+    .dropdown .tafsier i { left: 11%; }
+    .dropdown .tafsier .tfs { font-size: 18px }
+    /* The End "Khatma" */
+    .p-end { padding: 0 25px; font-size: 20px }
+}
+
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* -- Media Brand -- */
+    .brand {
+        font-size: 18px !important;
+        width: 25%;
+        right: 15px }
+
+    /* -- Media Name sourh -- */
+    .name-sourh {
+        width: 69%;
+        font-size: 18px !important;
+        font-weight: normal;
+        text-align: center }
+
+    .name-sourh > div { padding: 0 3.4em }
+    .name-sourh div:first-child,
+    .name-sourh div:last-child { font-size: 15px }
+
+    /* -- Media Menu -- */
+    .menu { width: 40% }
+
+    /* -- Media sourh -- */
+    .sourh { margin-top: 5em }
+    .sourh .speech-container { width: 82% }
+    .sourh .speech-container h3 { font-size: 35px; margin-bottom: 30px}
+    .sourh .speech-container .p-aya { font-size: 25px }
+    .sourh .speech-container .end-sourh { font-size: 25px; margin-left: 15px;}
+
+    /* Media DropDown */
+    .dropdown,
+    .dropdown .const .readers {
+        width: 150px;
+        height: auto;
+        right: 70px;
+        padding: 13px;
+        font-size: 14px }
+
+    .dropdown { top: 40px }
+    /* The End "Khatma" */
+    .p-end { padding: 0 45px; font-size: 22px }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* -- Media Brand -- */
+    .brand {
+        width: 25%;
+        right: 15px }
+
+    /* -- Media Name sourh -- */
+    .name-sourh {
+        width: 69%;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: center }
+
+    .name-sourh > div { padding: 0 3.4em }
+    .name-sourh div:first-child,
+    .name-sourh div:last-child { font-size: 15px }
+
+    /* -- Media Menu -- */
+    .menu { width: 33% }
+
+    /* -- Media sourh -- */
+    .sourh .speech-container { width: 80% }
+    .sourh .speech-container h3 { font-size: 40px; margin-bottom: 35px}
+    .sourh .speech-container .p-aya { font-size: 30px }
+    .sourh .speech-container .end-sourh { font-size: 26px; margin-left: 20px;}
+
+    /* Media DropDown */
+    .dropdown,
+    .dropdown .const .readers {
+        width: 160px;
+        height: auto;
+        right: 90px;
+        padding: 14px;
+        font-size: 14px }
+
+    .dropdown { top: 50px }
+    /* The End "Khatma" */
+    .p-end { padding: 0 55px; font-size: 23px }
+}
+
+
+ /* Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+    .menu { width: 23% }
+}

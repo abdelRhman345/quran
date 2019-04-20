@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "AmiriQuran-Regular";
+    src: url("../fonts/fontq4.eot");
+    src: url("../fonts/fontq4.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/fontq4.otf") format("opentype"),
+        url("../fonts/fontq4.svg") format("svg"),
+        url("../fonts/fontq4.ttf") format("truetype"),
+        url("../fonts/fontq4.woff") format("woff"),
+        url("../fonts/fontq4.woff2") format("woff2");
+    }
+@font-face {
+    font-family: "HelveticaNeueW23forSKYRegular";
+    src: url("../fonts/fontr1.eot");
+    src: url("../fonts/fontr1.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/fontr1.otf") format("opentype"),
+        url("../fonts/fontr1.svg") format("svg"),
+        url("../fonts/fontr1.ttf") format("truetype"),
+        url("../fonts/fontr1.woff") format("woff"),
+        url("../fonts/fontr1.woff2") format("woff2");
+    }
+@font-face {
+    font-family: "KFGQPCUthmanicScriptHAFS";
+    src: url("../fonts/fontq1.eot");
+    src: url("../fonts/fontq1.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/fontq1.otf") format("opentype"),
+        url("../fonts/fontq1.svg") format("svg"),
+        url("../fonts/fontq1.ttf") format("truetype"),
+        url("../fonts/fontq1.woff") format("woff"),
+        url("../fonts/fontq1.woff2") format("woff2");
+    }
+/* -------------------- */
+
+/* // Start Global Proparties // */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px }
+
+body {
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden }
+
+a { text-decoration: none !important }
+.clearfix { clear: both }
+hr {border: none; border-top: 1px solid #03a678}
+/* // End Gloabel Proparties // */
+
+/* -------------------- */
+
+/* Strat Scroll Bar */
+::-webkit-scrollbar { width: 5px }
+::-webkit-scrollbar-track { background-color: transparent }
+::-webkit-scrollbar-thumb { background-color: #03a678 }
+
+::-moz-scrollbar { width: 5px }
+::-moz-scrollbar-track { background-color: transparent }
+::-moz-scrollbar-thumb { background-color: #03a678 }
+/* End Scroll Bar */
+
+/* -------------------- */
+
+/* ----- Start Header ---- */
+header {
+    font-weight: normal;
+    font-family: "HelveticaNeueW23forSKYRegular" !important;
+    background-color: #03a678;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #05e1a2;
+    box-shadow: 0 -1px 29px 0px #e4e4e4;
+    color: #B4B4B4;
+    margin-bottom: 3.2em }
+
+/* Start Brand */
+.brand {
+    font-size: 18px;
+    padding: 5px;
+    float: right;
+    width: 20%;
+    height: 38px;
+    position: relative;
+    right: 20px;
+    text-align: center;
+    color: #fff;
+    border-left: 1px solid #f1f1f1;
+    line-height: 30px;
+    text-shadow: 2px 1px rgba(0, 0, 0, .2);
+    visibility: visible;
+    top: 5px;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out }
+
+/* Icon */
+.icons {
+    width: 28px;
+    height: 25px;
+    position: relative;
+    top: -27px }
+
+.icons > span {
+    width: 100%;
+    height: 1px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out }
+  
+.icons span:nth-child(1) { top: 0 }
+.icons span:nth-child(2) { top: 10px }
+.icons span:nth-child(3) { top: 20px }
+.icons.open span:nth-child(1) {
+    top: 10px;
+    transform: rotate(45deg) }
+
+.icons.open span:nth-child(2) {
+    width: 0;
+    height: 0 }
+
+.icons.open span:nth-child(3) {
+    top: 10px;
+    transform: rotate(-45deg) }
+
+
+/* Start Name sourh */
+.name-sourh {
+    background-color: #03a678;
+    font-size: 18px;
+    font-weight: normal;
+    float: right;
+    text-align: center;
+    color: #fff;
+    height: 38px;
+    line-height: 30px;
+    text-shadow: 2px 1px rgba(0, 0, 0, .2);
+    margin-top: 5px }
+
+.name-sourh > div {
+    display: inline-block;
+    padding: 0 6em }
+
+.name-sourh div:first-child,
+.name-sourh div:last-child { font-size: 16px }
+/* ----- End Header ---- */
+
+/* -------------------- */
+
+/* Start Menu */
+.menu {
+    width: 25%;
+    float: right;
+    height: 100%;
+    position: absolute;
+    visibility: hidden;
+    top: 50px;
+    font-family: "HelveticaNeueW23forSKYRegular" }
+
+.menu .menu-1 {
+    background-color: #fff;
+    color: #505050;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    position: absolute;
+    border-left: 1px solid #B4B4B4;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 1px 3px 6px 4px rgba(0, 0, 0, .1);
+    transform: translateX(400px);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out }
+
+.menu .menu-1.menu-valid {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(0) !important }
+
+.menu .list-menu {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll }
+
+.menu .list-menu .list-box {
+    border-bottom: 1px solid #f1f1f1;
+    height: 30px;
+    width: 100%;
+    display: inline-block }
+
+.menu .list-menu .list-number-box {
+    background-color: #f1f1f1;
+    float: right;
+    width: 10%;
+    height: 28px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 33px;
+    text-align: center;
+    border-left: 1px solid #03a678;
+    text-shadow: 2px 1px #f4f4f4 }
+
+.menu .span-right-list {
+    height: 28px;
+    color: #909090;
+    margin-right: 3%;
+    font-size: 13px;
+    line-height: 33px;
+    text-decoration: none;
+    text-shadow: 2px 1px #f4f4f4 }
+
+.menu .span-right-list:hover { color: #009a6f }
+.menu .end-menu {
+    font-size: 18px !important;
+    font-weight: normal;
+    font-family: "HelveticaNeueW23forSKYRegular" !important;
+    border-left: 2px solid #05e1a2;
+    border-right: 2px solid #05e1a2;
+    padding: 5px;
+    width: 100%;
+    height: 38px;
+    background-color: #03a678;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    text-shadow: 2px 1px rgba(0, 0, 0, .2);
+    cursor: pointer }
+/* End Menu */
+
+/* -------------------- */
+
+/* Start sourh */
+.sourh {
+    font-family: 'KFGQPCUthmanicScriptHAFS', serif;
+    text-align: center;
+    color: #505050;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center }
+
+.sourh .speech-container {
+    height: 100%;
+	width: 80%;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-left: solid 1px #B4B4B4;
+    border-right: solid 1px #B4B4B4 }
+
+.div-aya { position: relative }
+.sourh .speech-container .head,
+.sourh .speech-container h3 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 40px;
+    color: #650a0a;
+    text-align: center !important }
+
+.sourh .speech-container .p-aya {
+    text-align: right;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 30px }
+
+.sourh .speech-container .p-aya span:hover {
+    background-color: rgba(221, 221, 221, .4);
+    cursor: pointer }
+
+.sourh .speech-container .end-sourh {
+    text-align: left;
+    color: #650a0a;
+    margin: 10px 30px;
+    font-size: 28px }
+/* End sourh */
+
+/* -------------------- */
+
+/* Start DropDown */
+.dropdown,
+.dropdown .const .readers {
+    font-family: 'KFGQPCUthmanicScriptHAFS', serif !important;
+    background-color: #f9f9f9;
+    color: #505050;
+    width: 160px;
+    height: auto;
+    position: absolute;
+    display: none;
+    right: 115px;
+    z-index: 99;
+    border-radius: 2px;
+    padding: 15px;
+    font-size: 15px;
+    text-align: right;
+    border: 1px solid #eee;
+    box-shadow: -4px 3px 6px 0px rgba(0, 0, 0, .1) }
+
+.dropdown { top: 50px }
+.dropdown-head {
+    top: 4em;
+    right: 25em }
+
+.dropdown::before {
+    content: "";
+    content: "";
+    position: absolute;
+    top: -13px;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #f9f9f9;
+    border-left: 10px solid transparent }
+
+.dropdown .inner > div,
+.dropdown .const .readers > div {
+    padding: 6px;
+    border-bottom: 1px solid #e2e2e2;
+    cursor: pointer;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out }
+
+.dropdown .inner > div:first-child {padding-top: 3px}
+
+.dropdown .inner > div:last-child,
+.dropdown .const .readers > div:last-child {
+    border-bottom: none }
+
+.dropdown .inner > div:hover,
+.dropdown .const .readers > div:hover {
+    padding-right: 10px;
+    background-color: #eee }
+
+.dropdown .inner > div i { margin-left: 5px }
+.dropdown .const:hover .readers { color: #505050 }
+
+.dropdown .tafsier {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: default }
+
+.dropdown .tafsier i {
+    position: absolute;
+    top: 13%;
+    left: 9.3%;
+    cursor: pointer;
+    margin: 0 !important }
+
+.dropdown .tafsier .tfs {
+    width: 85%;
+    height: 80%;
+    color: #151515;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    border: 1px solid #03a678;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 35px !important;
+    font-size: 19px;
+    line-height: 35px !important }
+/* End DropDown */
+
+/* -------------------- */
+
+/* The End "Khatma" */
+.name { line-height: 40px }
+.p-end {
+    padding: 0 60px;
+    line-height: 2;
+    font-size: 23px;
+    font-weight: normal }
